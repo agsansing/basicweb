@@ -1,0 +1,48 @@
+.navbar{
+    background-color: black;
+    color: white;
+    height: 75px;
+}
+.navbar-brand{
+    color: greenyellow;
+    font-size: 20px;
+}
+.nav-link{
+    color: white;
+    font-size: 20px;
+    height: 75px;
+    vertical-align: bottom;
+}
+a{
+    display: block;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding: 8px;
+}
+.jumbotron{
+    background-color: greenyellow;
+    color: darkslategray;
+}
+hr.my-4{
+    border-top: 1px solid darkslategray;
+}
+.button{
+    background-color: black;
+    color: white;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid gray;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover{
+    background-color: gray;
+    color: white;
+}
