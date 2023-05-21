@@ -26,13 +26,10 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Action</a>
+                <a class="nav-link" href="#">Action/Adventure</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link">Sports</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Adventure</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#">Battle Royale</a>
@@ -78,7 +75,7 @@
     
     <!-- Featured Cards-->
     <h2>Featured Games</h2>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
                 <div id="cards"></div>
@@ -86,7 +83,19 @@
         </div>
     </div>
 
-    <script src="./resources/scripts/index.js"></script>
+    <div id="games">
+        
+    </div>
+    <div>
+        <form onsubmit="return false;" method="host">
+            <label for="title">Game Title</label>
+            <input type="text" name="title" id="title"/>
+            <label for="genre">Game Genre</label>
+            <input type="text" name="genre" id="genre"/>
+            <input type="submit" value="Submit" onclick="postGame()"/>
+        </form>
+    </div>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>

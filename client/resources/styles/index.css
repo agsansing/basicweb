@@ -2,6 +2,11 @@
     background-color: black;
     color: white;
     height: 75px;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }
 .navbar-brand{
     color: greenyellow;

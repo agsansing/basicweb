@@ -41,6 +41,45 @@ let loadFeatures= function(){
     html += "</div>"
     document.getElementById("cards").innerHTML = html
 }
+function getGames(){
+    const allGamesApiUrl = "https://localhost:7099/api/games";
+
+    fetch(allGamesApiUrl).then(function(response){
+        console.log(response);
+        return response.json();
+    }).then(function(json){
+        let html = "<ul>";
+        json.forEach((game)=>{
+            html += "<li>" + game.title + " " + game.genre + "</li>";
+        });
+        html += "</ul>";
+        document.getElementById("games").innerHTML = html;
+    }).catch(function(error){
+        console.log(error);
+    });
+}
+function postGame(){
+    const postGameApiUrl = "https://localhost:7099/api/games";
+    const gameTitle = document.getElementById("title").value;
+    const gameGenre = document.getElementById("genre").value;
+
+    fetch(postGameApiUrl, {
+        method: "POST",
+        headers: {
+            "Accept": 'application/json',
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify({
+            title: gameTitle,
+            genre: gameGenre
+        })
+    })
+    .then((response)=>{
+        console.log(response);
+        getGames();
+    })
+}
 function handleOnLoad(){
-    loadFeatures()
+    loadFeatures();
+    getGames();
 }

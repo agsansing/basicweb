@@ -243,3 +243,8 @@
 /Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/obj/Debug/net7.0/API.pdb
 /Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/obj/Debug/net7.0/API.genruntimeconfig.cache
 /Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/obj/Debug/net7.0/ref/API.dll
+/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/bin/Debug/net7.0/System.Data.SQLite.dll
+/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/bin/Debug/net7.0/runtimes/linux-x64/native/SQLite.Interop.dll
+/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/bin/Debug/net7.0/runtimes/osx-x64/native/SQLite.Interop.dll
+/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/bin/Debug/net7.0/runtimes/win-x64/native/SQLite.Interop.dll
+/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/bin/Debug/net7.0/runtimes/win-x86/native/SQLite.Interop.dll

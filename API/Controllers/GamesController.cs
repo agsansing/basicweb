@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using API.models;
+using API.models.interfaces;
+using Microsoft.AspNetCore.Cors;
 
 namespace API.Controllers
 {
@@ -12,23 +15,29 @@ namespace API.Controllers
     public class GamesController : ControllerBase
     {
         // GET: api/Games
+        [EnableCors("OpenPolicy")]
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Game> Get()
         {
-            return new string[] { "value1", "value2" };
+            IGetAllGames readObject = new ReadGameData();
+            return readObject.GetAllGames();
         }
 
         // GET: api/Games/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public Game Get(int id)
         {
-            return "value";
+            IGetGame readObject = new ReadGameData();
+            return readObject.GetGame(id);
         }
 
         // POST: api/Games
+        [EnableCors("OpenPolicy")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Game value)
         {
+            IInsertGame insertObject = new SaveGame();
+            insertObject.InsertGame(value);
         }
 
         // PUT: api/Games/5
