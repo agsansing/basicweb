@@ -25,9 +25,10 @@ let features= [
     }
 ]
 let loadFeatures= function(){
-    let html = `<div class="row">`
+    let html = `<div class="container-fluid">`
         features.forEach(function(feature){
             html += `
+            <div class="row" style="display: inline-block; margin: 8px; padding: 8px">    
                 <div class="card m-4" style="width: 18rem;">
                     <img src="${feature.img}" class="card-img-top" alt="..." width="200" height=125">
                     <div class="card-body">
@@ -36,6 +37,7 @@ let loadFeatures= function(){
                         <a href="${feature.url}" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
+            </div>
             `
         })
     html += "</div>"

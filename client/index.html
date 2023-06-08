@@ -26,39 +26,11 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Action/Adventure</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Sports</a>
+                <a class="nav-link">Contact</a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Battle Royale</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">RPG</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Racing</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Fighting</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Strategy</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Simulation</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">Horror</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">FPS</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#">MMO</a>
-              </li>
-            </ul>
           </div>
       </nav>
 
@@ -75,28 +47,45 @@
     
     <!-- Featured Cards-->
     <h2>Featured Games</h2>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div id="cards"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="games">
-        
-    </div>
-    <div>
+    <div id="cards"></div>
         <form onsubmit="return false;" method="host">
-            <label for="title">Game Title</label>
-            <input type="text" name="title" id="title"/>
-            <label for="genre">Game Genre</label>
-            <input type="text" name="genre" id="genre"/>
+            <div class="form-group">
+                <label for="title">Game Title</label>
+                <input type="text" name="title" id="title"/>
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <select class="custom-select mr-sm-2" id="genre">
+                    <option>Action/Adventure</option>
+                    <option>Sports</option>
+                    <option>Battle Royale</option>
+                    <option>RPG</option>
+                    <option>Racing</option>
+                    <option>Fighting</option>
+                    <option>Strategy</option>
+                    <option>Simulation</option>
+                    <option>Horror</option>
+                    <option>FPS</option>
+                    <option>MMO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <select class="custom-select custom-select-sm">
+                    <option selected>Choose...</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Star</option>
+                    <option value="3">3 Star</option>
+                    <option value="4">4 Star</option>
+                    <option value="5">5 Star</option>
+                </select>
+            </div>
             <input type="submit" value="Submit" onclick="postGame()"/>
         </form>
     </div>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/addons/rating.js"></script>
 </body>
 </html>
