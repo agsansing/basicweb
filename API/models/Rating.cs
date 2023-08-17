@@ -5,10 +5,10 @@ namespace API.models
         public int UserId{get; set;}
         public int GameId{get; set;}
         public int UserRating{get; set;}
-    }
 
-    public override string ToString()
+        public override string ToString()
         {
             return UserId + " " + GameId + " " + UserRating;
         }
+    }
 }

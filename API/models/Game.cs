@@ -6,9 +6,11 @@ namespace API.models
         public string Title{get; set;}
         public string Genre{get; set;}
 
+        public int Rating{get; set;}
+
         public override string ToString()
         {
-            return Id + " " + Title + " " + Genre;
+            return Id + " " + Title + " " + Genre + " " + Rating;
         }
     }
 }

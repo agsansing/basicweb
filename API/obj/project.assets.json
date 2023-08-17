@@ -9761,11 +9761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/API.csproj",
+      "projectUniqueName": "/Users/alliesans/Documents/UA Summer 2023/MIS 321 Make-Up/Source/Repos/GameX/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/API.csproj",
+      "projectPath": "/Users/alliesans/Documents/UA Summer 2023/MIS 321 Make-Up/Source/Repos/GameX/API/API.csproj",
       "packagesPath": "/Users/alliesans/.nuget/packages/",
-      "outputPath": "/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/GameX/API/obj/",
+      "outputPath": "/Users/alliesans/Documents/UA Summer 2023/MIS 321 Make-Up/Source/Repos/GameX/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alliesans/.nuget/NuGet/NuGet.Config"

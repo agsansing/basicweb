@@ -7,7 +7,7 @@ namespace API.models
     {
         public void InsertRating(Rating value)
       {
-        string cs = @"URI=file:/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/gamedatabase/game.db";
+        string cs = @"URI=file:/Users/alliesans/Documents/UA Summer 2023/MIS 321 Make-Up/Source/Repos/GameX/API/game.db";
         using var con = new SQLiteConnection(cs);
         con.Open();
 

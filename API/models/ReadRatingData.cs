@@ -10,7 +10,7 @@ namespace API.models
         {
             List<Rating> allRatings = new List<Rating>();
 
-            string cs = @"URI=file:/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/gamedatabase/game.db";
+            string cs = @"URI=file:/Users/alliesans/Documents/UA Summer 2023/MIS 321 Make-Up/Source/Repos/GameX/API/game.db";
             using var con = new SQLiteConnection(cs);
             con.Open();
 
@@ -29,7 +29,7 @@ namespace API.models
 
         public Rating GetRating(int gameId)
         {
-            string cs = @"URI=file:/Users/alliesans/Documents/MIS 321 Make-Up/Source/Repos/gamedatabase/game.db";
+            string cs = @"URI=file:/Users/alliesans/Documents/UA Summer 2023/MIS 321 Make-Up/Source/Repos/GameX/API/game.db";
             using var con = new SQLiteConnection(cs);
             con.Open();
 
@@ -42,7 +42,5 @@ namespace API.models
             rdr.Read();
             return new Rating(){UserId = rdr.GetInt32(0), GameId = rdr.GetInt32(1), UserRating = rdr.GetInt32(2)};
         }
-    }
-}
     }
 }
