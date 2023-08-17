@@ -51,3 +51,11 @@ hr.my-4{
     background-color: gray;
     color: white;
 }
+.img-thumbnail{
+    height: 300px;
+    width: 360px;
+}
+.img-thumbnail2{
+    height: 300px;
+    width: 250px;
+}

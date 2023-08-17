@@ -23,14 +23,15 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./aboutme.html">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
+            </ul>
           </div>
       </nav>
 
@@ -83,6 +84,14 @@
             <input type="submit" value="Submit" onclick="postGame()"/>
         </form>
     </div>
+    <div id="games">
+
+    </div>
+    <body onload = "getGames(), getRatings()">
+        <script type="text/javascript" src="resources/scripts/index.js"></script>
+        <div id="games">
+        </div>
+    </body>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -81,42 +81,42 @@ function postGame(){
         getGames();
     })
 }
-function getRatings(){
-    const allRatingsApiUrl = "https://localhost:7099/api/games";
+// function getRatings(){
+//     const allRatingsApiUrl = "https://localhost:7099/api/games";
 
-    fetch(allRatingsApiUrl).then(function(response){
-        console.log(response);
-        return response.json();
-    }).then(function(json){
-        let html = "<ul>";
-        json.forEach((rating)=>{
-            html += "<li>" + rating.userRating + "</li>";
-        });
-        html += "</ul>";
-        document.getElementById("ratings").innerHTML = html;
-    }).catch(function(error){
-        console.log(error);
-    });
-}
-function postRating(){
-    const postRatingApiUrl = "https://localhost:7099/api/games";
-    const ratingUserRating = document.getElementById("userRating").value;
-
-    fetch(postRatingApiUrl, {
-        method: "POST",
-        headers: {
-            "Accept": 'application/json',
-            "Content-Type": 'application/json'
-        },
-        body: JSON.stringify({
-            rating: ratingUserRating
-        })
-    })
-    .then((response)=>{
-        console.log(response);
-        getRatings();
-    })
-}
+//     fetch(allRatingsApiUrl).then(function(response){
+//         console.log(response);
+//         return response.json();
+//     }).then(function(json){
+//         let html = "<ul>";
+//         json.forEach((rating)=>{
+//             html += "<li>" + rating.userRating + "</li>";
+//         });
+//         html += "</ul>";
+//         document.getElementById("ratings").innerHTML = html;
+//     }).catch(function(error){
+//         console.log(error);
+//     });
+// }
+// function postRating(){
+//     const postRatingApiUrl = "https://localhost:7099/api/games";
+//     const ratingUserRating = document.getElementById("userRating").value;
+ 
+//     fetch(postRatingApiUrl, {
+//         method: "POST",
+//         headers: {
+//             "Accept": 'application/json',
+//             "Content-Type": 'application/json'
+//         },
+//         body: JSON.stringify({
+//             rating: ratingUserRating
+//         })
+//     })
+//     .then((response)=>{
+//         console.log(response);
+//         getRatings();
+//     })
+// }
 function handleOnLoad(){
     loadFeatures();
     getGames();
